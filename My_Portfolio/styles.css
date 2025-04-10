@@ -1,0 +1,361 @@
+/* ==========================
+   General Styling
+========================== */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+/* ==========================
+   Navigation Bar
+========================== */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #222;
+    padding: 12px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #fdbd36;
+}
+
+/* ==========================
+   Home Section
+========================== */
+.section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 20px;
+    max-width: 1100px;
+    margin: 30px auto 50px;
+}
+
+.profile img {
+    width: 480px;
+    height: 380px;
+    border-radius: 10px;
+}
+
+.info h1 {
+    font-size: 36px;
+    color: #fdbd36;
+}
+
+.info h2 {
+    font-size: 26px;
+    color: white;
+}
+
+.info p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+    letter-spacing: 0.3px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    margin-top: 15px;
+    padding: 12px 24px;
+    font-size: 18px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #fdbd36;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #fdbd36;
+    color: black;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin-right: 15px;
+    font-size: 26px;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+    color: #fdbd36;
+}
+
+/* ==========================
+   Education Section
+========================== */
+.section-title {
+    font-size: 32px;
+    color: #fdbd36;
+    margin-bottom: 30px;
+}
+
+.timeline {
+    max-width: 800px;
+    margin: auto;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    border-left: 3px solid #fdbd36;
+}
+
+.timeline-content {
+    background: #222;
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    text-align: left;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -11.5px;
+    top: 0px;
+    width: 16px;
+    height: 16px;
+    background: #fdbd36;
+    border-radius: 50%;
+    border: 2px solid #222;
+}
+
+/* ==========================
+   Skills Section
+========================== */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 900px;
+    margin: 10px auto 100px;
+}
+
+.skill-category {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skill-category h3 {
+    font-size: 24px;
+    color: #fdbd36;
+    margin-bottom: 10px;
+}
+
+.skill-category p {
+    font-size: 18px;
+    color: white;
+    margin: 0;
+}
+
+/* ==========================
+   Projects Section
+========================== */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.project-card {
+    background: #222;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 450px;
+    text-align: left;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card h3 {
+    color: #fdbd36;
+    font-size: 26px;
+    text-align: center;
+}
+
+.project-card p,
+.project-card ul li {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* ==========================
+   Contact Section
+========================== */
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+    gap: 40px;
+}
+
+.contact-info {
+    text-align: left;
+    flex: 1;
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    color: #fdbd36;
+}
+
+.contact-details p {
+    font-size: 16px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact-details i {
+    margin-right: 10px;
+    color: #fdbd36;
+}
+
+/* Email styled like normal text but clickable */
+.contact-details a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contact-details a:hover {
+    color: #fdbd36;
+}
+
+.contact-form {
+    flex: 1;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+.contact-form label {
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.contact-form button {
+    background: black;
+    border: 2px solid #fdbd36;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #fdbd36;
+    color: black;
+}
+
+/* ==========================
+   Responsive Design
+========================== */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .profile img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .timeline {
+        padding: 0 20px;
+    }
+
+    .timeline-item {
+        padding-left: 20px;
+    }
+}
