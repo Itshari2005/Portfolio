@@ -1,7 +1,7 @@
 
 ## 🔗 Live Demo
 
-[Click here to view the live portfolio](https://itshari2005.github.io/My_Portfolio/)  
+[Click here to view the live portfolio](https://itshari2005.github.io/Portfolio/)  
 
 ## 🛠️ Tech Stack
 
