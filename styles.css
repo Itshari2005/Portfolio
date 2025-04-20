@@ -207,39 +207,65 @@ html {
 /* ==========================
    Projects Section
 ========================== */
-.projects-container {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-    margin-bottom: 100px;
+.projects-scroll-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns per row */
+    gap: 30px;
+    padding-bottom: 20px;
+    /* Remove horizontal scrolling */
 }
 
 .project-card {
     background: #222;
     padding: 30px;
     border-radius: 15px;
-    max-width: 450px;
+    min-width: 320px;
+    max-width: 350px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out;
 }
 
 .project-card h3 {
     color: #fdbd36;
-    font-size: 26px;
+    font-size: 24px;
     text-align: center;
 }
 
 .project-card p,
 .project-card ul li {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
 }
 
 .project-card:hover {
     transform: scale(1.05);
 }
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .projects-scroll-container {
+        grid-template-columns: 1fr; /* Stack projects in a single column on small screens */
+    }
+}
+
+.projects-scroll-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.projects-scroll-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.projects-scroll-container::-webkit-scrollbar-thumb {
+    background-color: #fdbd36;
+    border-radius: 4px;
+}
+
+  
 
 /* ==========================
    Contact Section
