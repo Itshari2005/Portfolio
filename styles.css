@@ -309,6 +309,12 @@ ul {
   color: var(--primary-color);
 }
 
+.label-email:hover {
+  color: #F7B633;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .social-links {
   display: flex;
   gap: 1rem;
