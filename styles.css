@@ -279,14 +279,21 @@ ul {
 }
 
 .image-container {
-  border-radius: 50%;
+  border-radius: 10px;
   overflow: hidden;
   width: 80%;
   max-width: 300px;
   margin: 0 auto;
-  box-shadow: var(--shadow);
-  border: 5px solid var(--secondary-color);
+  aspect-ratio: 3 / 4; /* Or use fixed height */
 }
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 
 .about-text {
   flex: 2;
